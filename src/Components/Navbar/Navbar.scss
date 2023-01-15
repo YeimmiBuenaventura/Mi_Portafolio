@@ -1,36 +1,57 @@
 .mee{
     display: grid;
     grid-template-rows: repeat(2 1fr);
-    grid-template-rows: repeat(auto-fill minmax(100x 1fr));
-    grid-template-rows: repeat(auto-fit minmax(100x 1fr));
-    margin: 50px 0px;
+    grid-template-rows: repeat(auto-fill minmax(100px 1fr));
+    grid-template-rows: repeat(auto-fit minmax(100px 1fr));
+    margin: 0px;
+    padding: 0;
 }
 .about{
     background: transparent;
     border: none;
     font-family: 'Covered By Your Grace', cursive;
     font-size: 2.5rem;
-    color: #E1C2FF;
+    color: #ffffff90;
     cursor: pointer;
-    margin: 0;
-    width: 20%;
+    padding: 50px;
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #370049,
+    -0.025em -0.05em 0 #7f4ca580,
+    0.025em 0.05em 0 #64277c;
 }
-.about:hover{
-    transform: scale(110%);
-    color: #935BCC;
+.about:hover, .project:hover{
+    font: 20px;
+    text-transform: uppercase;
+    color: #a770b2;
+    text-shadow: 0  2px 0 #884299,
+                0  4px 0 #732487,
+                0  6px 0 #681c7c, 
 }
 .flecha{
-    width: 8%;
+    width: 15px;
+    display: flex;
+    justify-self: center;
 }
 .project{
     background: transparent;
     border: none;
     font-family: 'Covered By Your Grace', cursive;
     font-size: 2.5rem;
-    color: #E1C2FF;
+    color: #ffffff90;
     cursor: pointer;
     margin: 0;
-    width: 20%;
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #370049,
+    -0.025em -0.05em 0 #7f4ca580,
+    0.025em 0.05em 0 #64277c;
 }
 .openAbout{
     position: relative;
@@ -43,26 +64,26 @@
     border-radius: 10px;
     padding: 0;
     margin: 0;
-    display: none ;
 }
 .open{
     color: #fff;
     font-size: 1.5rem;
     font-family: 'Shadows Into Light', cursive;
     text-align: center;
-    background-color: #00000090;
+    background-color: #00000095;
     border-radius: 10px;
     padding: 5px;
 }
 .animate:before, .animate:after{
     content: '' ;
     position: absolute;
-    left: -8px;
-    top: -8px;
-    background: linear-gradient(120deg, #7178df, #ab3ed8, #fd439f, #00ffff, #e5097f);
+    left: -5px;
+    top: -5px;
+    background: linear-gradient(120deg, #7f00b250, #bc4ed850,
+    #ab3ed850, #fd439f50);
     background-size: 300%;
-    width:calc(100% + 16px);
-    height:calc(100% + 16px);
+    width:calc(100% + 10px);
+    height:calc(100% + 10px);
     z-index: -1;
     animation: gradient 15s ease infinite;
     border-radius: 10px;

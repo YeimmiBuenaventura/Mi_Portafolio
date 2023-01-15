@@ -13,11 +13,26 @@ h1{
     grid-area: 1 / 1 / 2 / 2;
     font-family: 'Covered By Your Grace', cursive;
     font-size: 4rem;
-    color: #fff;
     font-weight: lighter;
     text-align: center;
     padding: 60px 100px;
+    color: transparent;
+    background-image: linear-gradient(to left, #9a0526, #7B68EE, #8b9ba5, #cd0c36, #ff0095);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%;    
 }
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
 .logo{
     grid-area: 1 / 2 / 2 / 3;   
     width: 20%; 

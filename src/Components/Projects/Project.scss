@@ -1,0 +1,93 @@
+.allpro{
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    grid-template-columns: repeat(auto-fit minmax(380px 1fr));
+    grid-template-columns: repeat(auto-fiLL minmax(380px 1fr));
+    row-gap: 50px;
+    padding-top: 0px;
+    justify-self: center;
+}
+.cartProject{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(auto-fit minmax(380px 1fr));
+    grid-template-columns: repeat(auto-fiLL minmax(380px 1fr));
+    grid-template-rows: repeat(4 auto);
+    grid-template-rows: repeat(auto-fit minmax(30px 1fr));
+    grid-template-rows: repeat(auto-fiLL minmax(30px 1fr));
+    padding: 0;
+    background-color: #00000090;
+    position: relative;
+    border-radius: 10px;
+    width: 95%;
+}
+figure{
+    grid-area: 1 / 1 / 5 / 2;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 40px;
+}
+.tit{
+    grid-area: 1 / 2 / 2 /3;
+    font-size: 3rem;
+    padding: 10px;
+    margin: 0;
+}
+.tec{
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 1.8rem;
+    margin-top: -35px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #ffffff;
+    text-align: center;
+}
+.git{
+    grid-area: 3 / 2 / 4 / 3;
+    font-size: 1.8rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+.des{
+    grid-area: 4 / 2 / 5 / 3;
+    font-size: 1.8rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+.icon{
+    width: 10%;
+    display: flex;
+    padding: 20px 0px;
+}
+.img{
+    width: 450px;
+    height: auto;
+}
+.animates:before, .animates:after{
+    content: '' ;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    background: linear-gradient(90deg, #7178df50, #00ffff50, #40cfff50, #63b4ff50);
+    background-size: 300%;
+    width:calc(100% + 10px);
+    height:calc(100% + 10px);
+    z-index: -1;
+    animation: gradients 10s ease infinite;
+    border-radius: 10px;
+}
+@keyframes gradients{
+    0%{
+        background-position: 0% 200%;
+    }
+    50%{
+        background-position: 200% 0%;
+    }
+    100%{
+        background-position: 0% 330%;
+    }
+}
+.animates:after{
+    filter: brightness(1.4);
+    filter: drop-shadow(16px 16px 20px #fff);
+    filter: blur(15px);
+}
+

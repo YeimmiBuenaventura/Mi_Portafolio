@@ -119,7 +119,7 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-columns: repeat(auto-fit, minmax(380px 1fr));
         grid-template-columns: repeat(auto-fill, minmax(380px 1fr));
-        row-gap: 50px;
+        row-gap: 30px;
     }
     .cartProject {
         display: grid;
@@ -133,7 +133,7 @@
         background-color: #00000099;
         position: relative;
         border-radius: 10px;
-        width: 95%;
+        width: 100%;
         align-self: center;
         justify-self: center;
     }
@@ -191,6 +191,348 @@
     }
     .img {
         width: 180px;
+        height: auto;
+    }
+    .animates:before,
+    .animates:after {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        background: linear-gradient(90deg, #7178df50, #00ffff50, #40cfff50, #63b4ff50);
+        background-size: 300%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        z-index: -1;
+        animation: gradients 10s ease infinite;
+        border-radius: 10px;
+    }
+    @keyframes gradients {
+        0% {
+            background-position: 0% 200%;
+        }
+
+        50% {
+            background-position: 200% 0%;
+        }
+
+        100% {
+            background-position: 0% 330%;
+        }
+    }
+    .animates:after {
+        filter: brightness(1.4);
+        filter: drop-shadow(16px 16px 20px #fff);
+        filter: blur(15px);
+    }
+}
+//Mobile horizontal
+@media (min-width:399px) and (max-width:760px) and ( orientation:landscape){
+    .allpro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(380px 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(380px 1fr));
+        row-gap: 50px;
+    }
+    .cartProject {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px 1fr));
+        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(auto-fit, minmax(20px 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(20px 1fr));
+        padding: 10px 0px;
+        background-color: #00000099;
+        position: relative;
+        border-radius: 10px;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+    figure {
+        grid-area: 3 / 1 / 4 / 2;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .tit {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: auto;
+        font-size: 2.2rem;
+        padding: 5px;
+        margin: 0;
+        align-self: center;
+        justify-self: center;
+    }
+    .tec {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 100%;
+        height:auto;
+        font-size: 1.2rem;
+        margin-top: -5px;
+        font-family: 'Shadows Into Light', cursive;
+        color: #ffffff;
+        text-align: center;
+        align-self: start;
+        justify-self: center;
+    }
+    .git {
+        grid-area: 5 / 1 / 6 / 2;
+        display: flex;
+    }
+    .des {
+        grid-area: 6 / 1 / 7 / 2;
+        display: flex;
+    }
+    .icon {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 15px;
+        height: auto;
+        padding: 0px 10px;
+        align-self: center;
+    }
+    .links, .linksg {
+        font-size: 1.2rem;
+        color: #cfa8bb;
+        font-family: 'Shadows Into Light', cursive;
+        display: flex;
+        align-self: start;
+        justify-self: start;
+    }
+    .img {
+        width: 270px;
+        height: auto;
+    }
+    .animates:before,
+    .animates:after {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        background: linear-gradient(90deg, #7178df50, #00ffff50, #40cfff50, #63b4ff50);
+        background-size: 300%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        z-index: -1;
+        animation: gradients 10s ease infinite;
+        border-radius: 10px;
+    }
+    @keyframes gradients {
+        0% {
+            background-position: 0% 200%;
+        }
+
+        50% {
+            background-position: 200% 0%;
+        }
+
+        100% {
+            background-position: 0% 330%;
+        }
+    }
+    .animates:after {
+        filter: brightness(1.4);
+        filter: drop-shadow(16px 16px 20px #fff);
+        filter: blur(15px);
+    }
+}
+//Tablet
+@media (min-width:481px) and (max-width:768px) and (orientation:portrait){
+    .allpro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(380px 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(380px 1fr));
+        row-gap: 50px;
+    }
+    .cartProject {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px 1fr));
+        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(auto-fit, minmax(20px 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(20px 1fr));
+        padding: 10px 0px;
+        background-color: #00000099;
+        position: relative;
+        border-radius: 10px;
+        width: 95%;
+        align-self: center;
+        justify-self: center;
+    }
+    figure {
+        grid-area: 3 / 1 / 4 / 2;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .tit {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: auto;
+        font-size: 2.6rem;
+        padding: 5px;
+        margin: 0;
+        align-self: center;
+        justify-self: center;
+    }
+    .tec {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 100%;
+        height:auto;
+        font-size: 1.2rem;
+        margin-top: -5px;
+        font-family: 'Shadows Into Light', cursive;
+        color: #ffffff;
+        text-align: center;
+        align-self: start;
+        justify-self: center;
+    }
+    .git {
+        grid-area: 5 / 1 / 6 / 2;
+        display: flex;
+    }
+    .des {
+        grid-area: 6 / 1 / 7 / 2;
+        display: flex;
+    }
+    .icon {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 30px;
+        height: auto;
+        padding: 0px 10px;
+        align-self: center;
+    }
+    .links, .linksg {
+        font-size: 1.5rem;
+        color: #cfa8bb;
+        font-family: 'Shadows Into Light', cursive;
+        display: flex;
+        align-self: start;
+        justify-self: start;
+    }
+    .img {
+        width: 350px;
+        height: auto;
+    }
+    .animates:before,
+    .animates:after {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        background: linear-gradient(90deg, #7178df50, #00ffff50, #40cfff50, #63b4ff50);
+        background-size: 300%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        z-index: -1;
+        animation: gradients 10s ease infinite;
+        border-radius: 10px;
+    }
+    @keyframes gradients {
+        0% {
+            background-position: 0% 200%;
+        }
+
+        50% {
+            background-position: 200% 0%;
+        }
+
+        100% {
+            background-position: 0% 330%;
+        }
+    }
+    .animates:after {
+        filter: brightness(1.4);
+        filter: drop-shadow(16px 16px 20px #fff);
+        filter: blur(15px);
+    }
+}
+//Tablet horizontal
+@media (min-width:761px) and (max-width:1024px) and (orientation:landscape){
+    .allpro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(380px 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(380px 1fr));
+        row-gap: 50px;
+    }
+    .cartProject {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px 1fr));
+        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(auto-fit, minmax(20px 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(20px 1fr));
+        padding: 10px 0px;
+        background-color: #00000099;
+        position: relative;
+        border-radius: 10px;
+        width: 95%;
+        align-self: center;
+        justify-self: center;
+    }
+    figure {
+        grid-area: 3 / 1 / 4 / 2;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .tit {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: auto;
+        font-size: 3.2rem;
+        padding: 5px;
+        margin: 0;
+        align-self: center;
+        justify-self: center;
+    }
+    .tec {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 100%;
+        height:auto;
+        font-size: 1.5rem;
+        margin-top: -5px;
+        font-family: 'Shadows Into Light', cursive;
+        color: #ffffff;
+        text-align: center;
+        align-self: start;
+        justify-self: center;
+    }
+    .git {
+        grid-area: 5 / 1 / 6 / 2;
+        display: flex;
+    }
+    .des {
+        grid-area: 6 / 1 / 7 / 2;
+        display: flex;
+    }
+    .icon {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 35px;
+        height: auto;
+        padding: 0px 10px;
+        align-self: center;
+    }
+    .links, .linksg {
+        font-size: 1.8rem;
+        color: #cfa8bb;
+        font-family: 'Shadows Into Light', cursive;
+        display: flex;
+        align-self: start;
+        justify-self: start;
+    }
+    .img {
+        width: 450px;
         height: auto;
     }
     .animates:before,

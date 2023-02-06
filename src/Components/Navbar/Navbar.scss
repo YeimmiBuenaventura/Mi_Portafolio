@@ -106,7 +106,7 @@
         filter: blur(15px);
     }
 }
-
+//Mobile
 @media (min-width: 320px) and (max-width: 480px) and (orientation:portrait) {
     .mee {
         display: grid;
@@ -120,7 +120,7 @@
         background: transparent;
         border: none;
         font-family: 'Covered By Your Grace', cursive;
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: #ffffff90;
         cursor: pointer;
         display: flex;
@@ -147,7 +147,7 @@
         background: transparent;
         border: none;
         font-family: 'Covered By Your Grace', cursive;
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: #ffffff90;
         cursor: pointer;
         margin: 0;
@@ -174,6 +174,331 @@
         color: #fff;
         font-size: 1.2rem;
         font-family: 'Shadows Into Light', cursive;
+        text-align: center;
+        background-color: #00000095;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .animate:before,
+    .animate:after {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        background: linear-gradient(120deg, #7f00b250, #bc4ed850,
+                #ab3ed850, #fd439f50);
+        background-size: 300%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        z-index: -1;
+        animation: gradient 15s ease infinite;
+        border-radius: 10px;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 200%;
+        }
+
+        50% {
+            background-position: 200% 0%;
+        }
+
+        100% {
+            background-position: 0% 330%;
+        }
+    }
+    .animate:after {
+        filter: brightness(1.4);
+        filter: drop-shadow(16px 16px 20px #fff);
+        filter: blur(15px);
+    }
+}
+//Mobile horizontal
+@media (min-width:399px) and (max-width:760px) and ( orientation:landscape){
+    .mee {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(auto-fill, minmax(40px 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(40px 1fr));
+        margin: 0px;
+        padding: 0;
+    }
+    .about {
+        background: transparent;
+        border: none;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 1.8rem;
+        color: #ffffff90;
+        cursor: pointer;
+        padding: 30px 20px;
+        display: flex;
+        justify-self: center;
+        width: 100%;
+        height: 30%;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0.05em 0 0 #370049,
+            -0.025em -0.05em 0 #7f4ca580,
+            0.025em 0.05em 0 #64277c;
+    }
+    .about:hover,
+    .project:hover {
+        font: 20px;
+        text-transform: uppercase;
+        color: #a770b2;
+        text-shadow: 0 2px 0 #884299,
+            0 4px 0 #732487,
+            0 6px 0 #681c7c,
+    }
+    .project {
+        background: transparent;
+        border: none;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 1.8rem;
+        color: #ffffff90;
+        cursor: pointer;
+        margin: 0;
+        padding: 30px 20px;
+        display: flex;
+        width: 100%;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0.05em 0 0 #370049,
+            -0.025em -0.05em 0 #7f4ca580,
+            0.025em 0.05em 0 #64277c;
+    }
+    .openAbout {
+        position: relative;
+        background: #00000090;
+        padding: 0px;
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-self: center;
+        border-radius: 10px;
+    }
+    .open {
+        color: #fff;
+        font-size: 1.3rem;
+        font-family: 'Shadows Into Light', cursive;
+        font-weight: lighter;
+        text-align: center;
+        background-color: #00000095;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .animate:before,
+    .animate:after {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        background: linear-gradient(120deg, #7f00b250, #bc4ed850,
+                #ab3ed850, #fd439f50);
+        background-size: 300%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        z-index: -1;
+        animation: gradient 15s ease infinite;
+        border-radius: 10px;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 200%;
+        }
+
+        50% {
+            background-position: 200% 0%;
+        }
+
+        100% {
+            background-position: 0% 330%;
+        }
+    }
+    .animate:after {
+        filter: brightness(1.4);
+        filter: drop-shadow(16px 16px 20px #fff);
+        filter: blur(15px);
+    }
+}
+//Tablet
+@media (min-width:481px) and (max-width:768px) and (orientation:portrait){
+    .mee {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(auto-fill, minmax(40px 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(40px 1fr));
+        margin: 0px;
+        padding: 0;
+    }
+    .about {
+        background: transparent;
+        border: none;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 2.2rem;
+        color: #ffffff90;
+        cursor: pointer;
+        padding: 30px 20px;
+        display: flex;
+        justify-self: center;
+        width: 100%;
+        height: 30%;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0.05em 0 0 #370049,
+            -0.025em -0.05em 0 #7f4ca580,
+            0.025em 0.05em 0 #64277c;
+    }
+    .about:hover,
+    .project:hover {
+        font: 20px;
+        text-transform: uppercase;
+        color: #a770b2;
+        text-shadow: 0 2px 0 #884299,
+            0 4px 0 #732487,
+            0 6px 0 #681c7c,
+    }
+    .project {
+        background: transparent;
+        border: none;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 2.2rem;
+        color: #ffffff90;
+        cursor: pointer;
+        margin: 0;
+        padding: 30px 20px;
+        display: flex;
+        width: 100%;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0.05em 0 0 #370049,
+            -0.025em -0.05em 0 #7f4ca580,
+            0.025em 0.05em 0 #64277c;
+    }
+    .openAbout {
+        position: relative;
+        background: #00000090;
+        padding: 0px;
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-self: center;
+        border-radius: 10px;
+    }
+    .open {
+        color: #fff;
+        font-size: 1.5rem;
+        font-family: 'Shadows Into Light', cursive;
+        text-align: center;
+        background-color: #00000095;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .animate:before,
+    .animate:after {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        background: linear-gradient(120deg, #7f00b250, #bc4ed850,
+                #ab3ed850, #fd439f50);
+        background-size: 300%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        z-index: -1;
+        animation: gradient 15s ease infinite;
+        border-radius: 10px;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 200%;
+        }
+
+        50% {
+            background-position: 200% 0%;
+        }
+
+        100% {
+            background-position: 0% 330%;
+        }
+    }
+    .animate:after {
+        filter: brightness(1.4);
+        filter: drop-shadow(16px 16px 20px #fff);
+        filter: blur(15px);
+    }
+}
+//Tablet horizontal
+@media (min-width:761px) and (max-width:1024px) and (orientation:landscape){
+    .mee {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(auto-fill, minmax(100px 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px 1fr));
+        margin: 0px;
+        padding: 0;
+    }
+    .about {
+        background: transparent;
+        border: none;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 2.5rem;
+        color: #ffffff90;
+        cursor: pointer;
+        padding: 25px 30px;
+        display: flex;
+        justify-self: center;
+        width: 100%;
+        height: 40%;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0.05em 0 0 #370049,
+            -0.025em -0.05em 0 #7f4ca580,
+            0.025em 0.05em 0 #64277c;
+    }
+    .about:hover,
+    .project:hover {
+        font: 20px;
+        text-transform: uppercase;
+        color: #a770b2;
+        text-shadow: 0 2px 0 #884299,
+            0 4px 0 #732487,
+            0 6px 0 #681c7c,
+    }
+    .project {
+        background: transparent;
+        border: none;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 2.5rem;
+        color: #ffffff90;
+        cursor: pointer;
+        margin: 0;
+        padding: 50px 30px;
+        display: flex;
+        width: 100%;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0.05em 0 0 #370049,
+            -0.025em -0.05em 0 #7f4ca580,
+            0.025em 0.05em 0 #64277c;
+    }
+    .openAbout {
+        position: relative;
+        background: #00000090;
+        padding: 5px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-self: center;
+        border-radius: 10px;
+        padding: 0;
+        margin: 0;
+    }
+    .open {
+        color: #fff;
+        font-size: 1.7rem;
+        font-family: 'Shadows Into Light', cursive;
+        font-weight: lighter;
         text-align: center;
         background-color: #00000095;
         border-radius: 10px;

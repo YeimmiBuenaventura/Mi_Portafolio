@@ -8,7 +8,6 @@ import des from "../Contact/Img/enlace.png"
 export const MyProjects = () =>{
 
     const propios = mine.filter(item => item.type === "myprojects");
- //   const projects = useSelector((state) => state.carts.projects)
 
     return(
         <section className="allpro">
@@ -25,11 +24,11 @@ export const MyProjects = () =>{
                     </span>
                     <div className="git">
                         <img src={git} alt="github" className="icon"/>
-                        <span>{item.github}</span>
+                        <span className="linksg">{item.github}</span>
                     </div>
                     <div className="des">
                         <img src={des} alt="despliegue" className="icon"/>
-                        <span>{item.link}</span>
+                        <span  className="links">{item.link}</span>
                     </div>
                 </section>
             ))}

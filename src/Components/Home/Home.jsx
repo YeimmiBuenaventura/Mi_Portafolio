@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.scss";
-import logo from "./Img/LogoPersonalColor.png"
+import logo from "./Img/LogoPersonalBlanco.png"
 import { Navbar } from "../Navbar/Navbar";
 import { Contact } from "../Contact/Contact";
 

@@ -22,7 +22,7 @@ export const Navbar = () => {
                 <button className="about" onClick={handleAbout}> About Me
                 </button>
                 {open ? (<div className="card animate">
-                    <p className="text1">Desarrolladora Full-Stack, Me considero una persona pro activa, creativa, eficiente, flexible al cambio, resiliente, con capacidad de trabajo en equipo, consiente de mis tareas y responsabilidades propias del cargo que este ejecutando, dispuesta a aprender cada día y a compartir mis conocimientos en pro de cumplir metas personales y de la compañía.
+                    <p className="text1">Desarrolladora Full-Stack, Me considero una persona pro activa, creativa, eficiente, flexible al cambio, resiliente, con capacidad de trabajo en equipo, consiente de mis tareas y responsabilidades propias del cargo que este ejecutando, dispuesta ha aprender cada día y compartir mis conocimientos.
                     </p>
                     <div className="one">
                         <div className="two">

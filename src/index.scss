@@ -10,45 +10,10 @@ body {
 html{
   width: 100vw;
   height:100vh;
+  overflow-x:hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-@media (min-width: 320px) and (max-width: 480px) and (orientation:portrait){
-  body{
-  background-image: url("../public/Img/FondoPortafolioCel.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  width: 100%;
-  }
-}
-@media (min-width:399px) and (max-width:760px) and ( orientation:landscape){
-  body{
-  background-image: url("../public/Img/FondoPortafolio.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  width: 100%;
-  }
-}
-@media (min-width:481px) and (max-width:768px) and (orientation:portrait){
-  body{
-    background-image: url("../public/Img/FondoPortafolioCel.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    width: 100%;
-    }
-}
-@media (min-width:761px) and (max-width:1024px) and (orientation:landscape){
-  body{
-    background-image: url("../public/Img/FondoPortafolio.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    width: 100%;
-    }
 }

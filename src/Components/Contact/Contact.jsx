@@ -11,15 +11,12 @@ export const Contact = () =>{
 
     return(
         <section className="contact">
-            <section className="info">
-                <h2>Contactame</h2>
-                <div className="redes">
-                    <a href="https://www.linkedin.com/in/yeimmi-buenaventura/"><img src={lin}  alt="linkedln" className="imgs"/></a>
-                    <a href="https://github.com/YeimmiBuenaventura"><img src={git} alt="github" className="imgs"/></a>
-                    <img src={gmail} alt="gmail" className="imgs"/>
-                    <a href=" https://wa.me/573052064524"><img src={wa} alt="whatsapp" className="imgs"/></a>
-                </div>
-            </section>
+            <div className="redes">
+                <a href="https://www.linkedin.com/in/yeimmi-buenaventura/"><img src={lin}  alt="linkedln" className="imgs"/></a>
+                <a href="https://github.com/YeimmiBuenaventura"><img src={git} alt="github" className="imgs"/></a>
+                <img src={gmail} alt="gmail" className="imgs"/>
+                <a href=" https://wa.me/573052064524"><img src={wa} alt="whatsapp" className="imgs"/></a>
+            </div>
             <span className="text">“Sueña, crea y desarrolla... <br/>No existe el limite.”</span>
             <img src={photo} alt="me"  className="me"/>
         </section>

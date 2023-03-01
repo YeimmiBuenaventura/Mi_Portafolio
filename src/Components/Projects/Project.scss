@@ -7,12 +7,17 @@
         overflow-y: scroll;
         height: 600px;
     }
-    
-    :-webkit-scrollbar-track{      
+    .allpro::-webkit-scrollbar{      
+        width:10px;
+    }
+    .allpro::-webkit-scrollbar-thumb{      
+        background-color: #681c7c40;
+    }
+    .allpro::-webkit-scrollbar-track{      
         background-color: transparent;
     }
-    :-webkit-scrollbar-thumb:hover{      
-        background-color: red;
+    .allpro::-webkit-scrollbar-thumb:hover{      
+        background-color: #681c7c80;
     }
     .cartProject {
         display: grid;

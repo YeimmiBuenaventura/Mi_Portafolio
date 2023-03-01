@@ -24,10 +24,10 @@ export const MyProjects = () => {
                     </span>
                     <div className="oks">
                         <button className="git">
-                            <a href={item.github}><img src={git} alt="github" className="icon" /></a>
+                            <a href={item.github} title="Git - Repositorio"><img src={git} alt="github" className="icon" /></a>
                         </button>
                         <button className="des">
-                            <a href={item.link}><img src={des} alt="despliegue" className="icon" /></a>
+                            <a href={item.link} title="Despliegue - Página"><img src={des} alt="despliegue" className="icon" /></a>
                         </button>
                     </div>
                 </section>

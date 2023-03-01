@@ -17,7 +17,48 @@
     }
     .imgs {
         width: 35px;
-        padding: 15px 0px;
+        padding-top: 15px;
+    }
+    .gm{
+        background-color: transparent;
+        width:40px;
+        height:40px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .gm .imgs{
+        margin-left: -5px;
+        margin-top: -16px;
+    }
+    .target{
+        background-color: #681c7c90;
+        //background-color: #00000090;
+        border-radius: 5px;
+        width: 170px;
+        padding: 5px;
+        position: absolute;
+        margin-left: -60px;
+        margin-top: -160px;
+    }
+    .close{
+        width: 15px;
+        margin-left: -5px;
+    }
+    .closes{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20px;
+        margin-left: 85%;
+    }
+    .inf{
+        margin-top: -30px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 1.3rem;
+        color: #ffffff96;
+        text-align: justify;
+        padding-left: 5px;
     }
     .imgs:hover {
         filter: opacity(0.5) drop-shadow(0 0 0 #C00040);
@@ -38,15 +79,18 @@
         display: flex;
         font-family: 'Covered By Your Grace', cursive;
         filter: blur(1px);
-    }
-    .text:hover {
-        animation: humo 4s linear forwards infinite;
+        animation: humo 9s linear forwards infinite;
     }
     @keyframes humo {
         0% {
             transform: rotate(0deg) translateY(0);
             opacity: 1;
             filter: blur(1px);
+        }
+        50% {
+            transform: rotate(0deg) translateY(-16px);
+            opacity: 0.5;
+            filter: blur(3px);
         }
         100% {
             transform: rotate(0deg) translateY(-50px) translateX(-100px);

@@ -18,11 +18,21 @@ export const Navbar = () => {
 
     return (
         <section>
-            <section className="mee">           
+            <section className="mee">
                 <button className="about" onClick={handleAbout}> About Me
                 </button>
                 {open ? (<div className="card animate">
-                    <p className="text1">Desarrolladora Full-Stack, Me considero una persona pro activa, creativa, eficiente, flexible al cambio, resiliente, con capacidad de trabajo en equipo, consiente de mis tareas y responsabilidades propias del cargo que este ejecutando, dispuesta ha aprender cada día y compartir mis conocimientos.
+                    <p className="text1">Soy Ingeniera Ambiental y Desarrolladora Web Fullstack con
+                        MERN y cuento con conocimientos básicos JAVA.
+                        Me considero una persona con una fuerte ética laboral, empática,
+                        resiliente, con buena capacidad de escucha y trabajo en equipo; he
+                        desarrollado algunos proyectos en grupo, caracterizándome como
+                        una persona organizada y flexible al cambio, lo que a su vez me ha
+                        permitido trabajar de manera independiente en estas áreas.
+                        Esto me ha motivado a aprender y a retarme para adquirir más
+                        conocimientos en el área TI, siendo esta es una de mis grandes
+                        pasiones.
+
                     </p>
                     <div className="one">
                         <div className="two">
@@ -41,7 +51,7 @@ export const Navbar = () => {
                 <button className="project" onClick={handleProject}>Projects
                 </button>
                 {mine ? <MyProjects /> : null}
-                
+
             </section>
         </section>
     );

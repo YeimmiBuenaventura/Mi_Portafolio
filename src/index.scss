@@ -13,6 +13,22 @@ html{
   overflow-x:hidden;
 }
 
+html ::-webkit-scrollbar{      
+  width:10px;
+}
+html ::-webkit-scrollbar-thumb{      
+  background-color: #681c7c50;
+ // background-color: #681c7c50;
+}
+html ::-webkit-scrollbar-thumb:hover{      
+  background-color: #681c7c85;
+}
+html ::-webkit-scrollbar-track{
+  background-color: #000000;
+}
+html ::-webkit-scrollbar-track:hover{
+  background-color: transp;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

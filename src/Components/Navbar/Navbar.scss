@@ -4,7 +4,6 @@
         grid-template-rows: repeat(2, auto);
         grid-template-rows: repeat(auto-fill, minmax(100px 1fr));
         grid-template-rows: repeat(auto-fit, minmax(100px 1fr));
-        height: auto;
     }
     .about {
         background: transparent;
@@ -17,7 +16,6 @@
         display: flex;
         justify-self: center;
         width: 100%;
-        height: 40%;
         text-transform: uppercase;
         position: relative;
         text-shadow: 0.05em 0 0 #370049,
@@ -44,6 +42,7 @@
         cursor: pointer;
         margin: 0;
         padding: 50px;
+        padding-top: 150px;
         display: flex;
         width: 100%;
         text-transform: uppercase;
@@ -90,8 +89,8 @@
     }
 
     .card {
-        width: 80%;
-        height: auto;
+        width: 90%;
+        height: 145%;
         background: transparent;
         display: flex;
         justify-self: center;
@@ -104,8 +103,8 @@
     }
 
     .one {
-        width: 96%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
         background-color: #00000095;
         display: flex;
         justify-content: center;
@@ -114,7 +113,7 @@
     }
 
     .two {
-        width: 90%;
+        width: 95%;
         height: 95%;
         display: flex;
         justify-content: center;
@@ -129,7 +128,7 @@
 
     .three {
         width: 90%;
-        height: 95%;
+        height: 90%;
         display: flex;
         justify-content: center;
         align-self: center;
@@ -142,8 +141,8 @@
     }
 
     .four {
-        width: 90%;
-        height: 95%;
+        width: 85%;
+        height: 85%;
         display: flex;
         justify-content: center;
         align-self: center;
@@ -156,8 +155,8 @@
     }
 
     .five {
-        width: 90%;
-        height: 95%;
+        width: 80%;
+        height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -170,8 +169,8 @@
     }
 
     .six {
-        width: 90%;
-        height: 95%;
+        width: 75%;
+        height: 75%;
         color: #ececec;
         text-align: center;
         opacity: 0;
@@ -230,8 +229,8 @@
         font-size: 1.5rem;
         font-family: 'Shadows Into Light', cursive;
         text-align: center;
-        width: 90%;
-        height: auto;
+        width: 95%;
+        height: 95%;
     }
 
 }

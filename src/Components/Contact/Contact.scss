@@ -104,66 +104,102 @@
     .contact {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        grid-template-columns: repeat(auto-fit, minmax(180px 1fr));
-        grid-template-columns: repeat(auto-fill, minmax(180px 1fr));
-        grid-template-rows: repeat(2, auto);
-        grid-template-rows: repeat(auto-fit, minmax(40px 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(40px 1fr));
-        padding-top: 60px;
-        width: 90%;
-    }
-    .info {
-        grid-area: 2 / 2 / 3 / 3;
-        display: flex;
-        flex-direction: column;
-        justify-self: end;
-    }
-    h2 {
-        font-family: 'Covered By Your Grace', cursive;
-        font-size: 2rem;
-        color: #dbb6ee;
-        font-weight: lighter;
-        padding: 10px 25px;
+        grid-template-columns: repeat(auto-fill, minmax(150px 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
+        justify-content: center;
     }
     .redes {
+        grid-area: 1 / 2 / 2 / 3;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-self: end;
-        padding: 0px 10px;
+        align-self:last baseline;
+        width: 18%;
+        padding-left: 20px;
     }
     .imgs {
-        width: 25px;
-        padding: 5px 0px;
+        width: 35px;
+        padding-top: 15px;
+    }
+    .gm{
+        background-color: transparent;
+        width:40px;
+        height:40px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .gm .imgs{
+        margin-left: -5px;
+        margin-top: -16px;
+    }
+    .target{
+        background-color: #681c7c90;
+        //background-color: #00000090;
+        border-radius: 5px;
+        width: 120;
+        padding: 5px;
+        position: absolute;
+        margin-left: -250px;
+        margin-top: -50px;
+    }
+    .close{
+        width: 15px;
+        margin-left: -5px;
+    }
+    .closes{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20px;
+        margin-left: 85%;
+        margin-top: -10px;
+    }
+    .inf{
+        margin-top: -30px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 1rem;
+        color: #ffffff96;
+        text-align: justify;
+        padding-left: 3px;
+    }
+    .imgs:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 #C00040);
     }
     .me {
+        grid-area: 1 / 1 / 2 / 2;
         width: 180px;
-        grid-area: 2 / 1 / 3 / 2;
-        display: flex;
-        justify-self: end;
-        align-self: end;
+        height: auto;
+        margin:0;
         border-radius: 10px;
+        padding-left: 30px;
+        justify-self:last baseline;
+        align-self:last baseline;
+    }
+    .LazyLoad.is-visible.me{
+        justify-self:last baseline;
     }
     .text {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 2 / 1 / 3 / 3;
         color: #dbb6ee;
         font-weight: lighter;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         text-align: center;
         display: flex;
-        justify-self: center;
-        align-self: center;
         font-family: 'Covered By Your Grace', cursive;
         filter: blur(1px);
-    }
-    .text:hover {
-        animation: humo 4s linear forwards infinite;
+        animation: humo 9s linear forwards infinite;
     }
     @keyframes humo {
         0% {
             transform: rotate(0deg) translateY(0);
             opacity: 1;
             filter: blur(1px);
+        }
+        50% {
+            transform: rotate(0deg) translateY(-16px);
+            opacity: 0.5;
+            filter: blur(3px);
         }
         100% {
             transform: rotate(0deg) translateY(-50px) translateX(-100px);
@@ -177,66 +213,102 @@
     .contact {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
         grid-template-columns: repeat(auto-fill, minmax(150px 1fr));
-        grid-template-rows: repeat(2, auto);
-        grid-template-rows: repeat(auto-fit, minmax(40px 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(40px 1fr));
-        padding-top: 60px;
-        width: 90%;
-    }
-    .info {
-        grid-area: 2 / 2 / 3 / 3;
-        display: flex;
-        flex-direction: column;
-        justify-self: end;
-    }
-    h2 {
-        font-family: 'Covered By Your Grace', cursive;
-        font-size: 2rem;
-        color: #dbb6ee;
-        font-weight: lighter;
-        padding: 10px 25px;
+        grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
+        justify-content: center;
     }
     .redes {
+        grid-area: 1 / 2 / 2 / 3;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-self: end;
-        padding: 0px 10px;
+        align-self:last baseline;
+        width: 18%;
+        padding-left: 40px;
     }
     .imgs {
-        width: 25px;
-        padding: 5px 0px;
+        width: 35px;
+        padding-top: 15px;
+    }
+    .gm{
+        background-color: transparent;
+        width:40px;
+        height:40px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .gm .imgs{
+        margin-left: -5px;
+        margin-top: -16px;
+    }
+    .target{
+        background-color: #681c7c90;
+        //background-color: #00000090;
+        border-radius: 5px;
+        width: 140px;
+        padding: 5px;
+        position: absolute;
+        margin-left: -340px;
+        margin-top: -50px;
+    }
+    .close{
+        width: 15px;
+        margin-left: -5px;
+    }
+    .closes{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20px;
+        margin-left: 85%;
+        margin-top: -10px;
+    }
+    .inf{
+        margin-top: -30px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 1.1rem;
+        color: #ffffff96;
+        text-align: justify;
+        padding-left: 3px;
+    }
+    .imgs:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 #C00040);
     }
     .me {
-        width: 180px;
-        grid-area: 2 / 1 / 3 / 2;
-        display: flex;
-        justify-self: end;
-        align-self: end;
+        grid-area: 1 / 1 / 2 / 2;
+        width: 200px;
+        height: auto;
+        margin:0;
         border-radius: 10px;
+        padding-left: 30px;
+        justify-self:last baseline;
+        align-self:last baseline;
+    }
+    .LazyLoad.is-visible.me{
+        justify-self:last baseline;
     }
     .text {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 2 / 1 / 3 / 3;
         color: #dbb6ee;
         font-weight: lighter;
         font-size: 2.2rem;
         text-align: center;
         display: flex;
-        justify-self: center;
-        align-self: center;
         font-family: 'Covered By Your Grace', cursive;
         filter: blur(1px);
-    }
-    .text:hover {
-        animation: humo 4s linear forwards infinite;
+        animation: humo 9s linear forwards infinite;
     }
     @keyframes humo {
         0% {
             transform: rotate(0deg) translateY(0);
             opacity: 1;
             filter: blur(1px);
+        }
+        50% {
+            transform: rotate(0deg) translateY(-16px);
+            opacity: 0.5;
+            filter: blur(3px);
         }
         100% {
             transform: rotate(0deg) translateY(-50px) translateX(-100px);
@@ -250,66 +322,102 @@
     .contact {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
         grid-template-columns: repeat(auto-fill, minmax(150px 1fr));
-        grid-template-rows: repeat(2, auto);
-        grid-template-rows: repeat(auto-fit, minmax(40px 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(40px 1fr));
-        padding-top: 60px;
-        width: 95%;
-    }
-    .info {
-        grid-area: 2 / 2 / 3 / 3;
-        display: flex;
-        flex-direction: column;
-        justify-self: end;
-    }
-    h2 {
-        font-family: 'Covered By Your Grace', cursive;
-        font-size: 2.2rem;
-        color: #dbb6ee;
-        font-weight: lighter;
-        padding: 10px 25px;
+        grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
+        justify-content: center;
     }
     .redes {
+        grid-area: 1 / 2 / 2 / 3;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-self: end;
-        padding: 0px 10px;
+        align-self:last baseline;
+        width: 18%;
+        padding-left: 40px;
     }
     .imgs {
-        width: 25px;
-        padding: 5px 0px;
+        width: 35px;
+        padding-top: 15px;
+    }
+    .gm{
+        background-color: transparent;
+        width:40px;
+        height:40px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .gm .imgs{
+        margin-left: -5px;
+        margin-top: -16px;
+    }
+    .target{
+        background-color: #681c7c90;
+        //background-color: #00000090;
+        border-radius: 5px;
+        width: 170px;
+        padding: 5px;
+        position: absolute;
+        margin-left: -135px;
+        margin-top: -150px;
+    }
+    .close{
+        width: 15px;
+        margin-left: -5px;
+    }
+    .closes{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20px;
+        margin-left: 85%;
+        margin-top: -10px;
+    }
+    .inf{
+        margin-top: -40px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 1.3rem;
+        color: #ffffff96;
+        text-align: justify;
+        padding-left: 5px;
+    }
+    .imgs:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 #C00040);
     }
     .me {
+        grid-area: 1 / 1 / 2 / 2;
         width: 200px;
-        grid-area: 2 / 1 / 3 / 2;
-        display: flex;
-        justify-self: end;
-        align-self: end;
+        height: auto;
+        margin:0;
         border-radius: 10px;
+        padding-left: 30px;
+        justify-self:last baseline;
+        align-self:last baseline;
+    }
+    .LazyLoad.is-visible.me{
+        justify-self:last baseline;
     }
     .text {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 2 / 1 / 3 / 3;
         color: #dbb6ee;
         font-weight: lighter;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         text-align: center;
         display: flex;
-        justify-self: center;
-        align-self: center;
         font-family: 'Covered By Your Grace', cursive;
         filter: blur(1px);
-    }
-    .text:hover {
-        animation: humo 4s linear forwards infinite;
+        animation: humo 9s linear forwards infinite;
     }
     @keyframes humo {
         0% {
             transform: rotate(0deg) translateY(0);
             opacity: 1;
             filter: blur(1px);
+        }
+        50% {
+            transform: rotate(0deg) translateY(-16px);
+            opacity: 0.5;
+            filter: blur(3px);
         }
         100% {
             transform: rotate(0deg) translateY(-50px) translateX(-100px);
@@ -322,64 +430,98 @@
 @media (min-width:761px) and (max-width:1024px) and (orientation:landscape){
     .contact {
         display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-columns: repeat(auto-fit, minmax(180px 1fr));
-        grid-template-columns: repeat(auto-fill, minmax(180px 1fr));
-        padding-top: 60px;
-        width: 100%;
-    }
-    .info {
-        grid-area: 1 / 3 / 3 / 4;
-        display: flex;
-        flex-direction: column;
-        justify-self: end;
-    }
-    h2 {
-        font-family: 'Covered By Your Grace', cursive;
-        font-size: 2rem;
-        color: #dbb6ee;
-        font-weight: lighter;
-        padding: 10px 25px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(auto-fill, minmax(150px 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
+        justify-content: center;
     }
     .redes {
+        grid-area: 1 / 2 / 2 / 3;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-self: end;
-        padding: 0px 10px;
+        align-self:last baseline;
+        width: 18%;
+        padding-left: 40px;
     }
     .imgs {
-        width: 25px;
-        padding: 5px 0px;
+        width: 35px;
+        padding-top: 15px;
+    }
+    .gm{
+        background-color: transparent;
+        width:40px;
+        height:40px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .gm .imgs{
+        margin-left: -5px;
+        margin-top: -16px;
+    }
+    .target{
+        background-color: #681c7c90;
+        //background-color: #00000090;
+        border-radius: 5px;
+        width: 170px;
+        padding: 5px;
+        position: absolute;
+        margin-left: -90px;
+        margin-top: -160px;
+    }
+    .close{
+        width: 15px;
+        margin-left: -5px;
+    }
+    .closes{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20px;
+        margin-left: 85%;
+        margin-top: -10px;
+    }
+    .inf{
+        margin-top: -40px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 1.3rem;
+        color: #ffffff96;
+        text-align: justify;
+        padding-left: 5px;
+    }
+    .imgs:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 #C00040);
     }
     .me {
-        width: 220px;
-        grid-area: 1 / 2 / 2 / 3;
-        display: flex;
-        justify-self: end;
-        align-self: end;
+        grid-area: 1 / 1 / 2 / 2;
+        width: 250px;
         border-radius: 10px;
+        padding-left: 30px;
+        justify-self: last baseline;
+        align-self:last baseline;
     }
     .text {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: 2 / 1 / 3 / 3;
         color: #dbb6ee;
         font-weight: lighter;
         font-size: 2.6rem;
         text-align: center;
         display: flex;
-        justify-self: end;
-        align-self: center;
         font-family: 'Covered By Your Grace', cursive;
         filter: blur(1px);
-    }
-    .text:hover {
-        animation: humo 4s linear forwards infinite;
+        animation: humo 9s linear forwards infinite;
     }
     @keyframes humo {
         0% {
             transform: rotate(0deg) translateY(0);
             opacity: 1;
             filter: blur(1px);
+        }
+        50% {
+            transform: rotate(0deg) translateY(-16px);
+            opacity: 0.5;
+            filter: blur(3px);
         }
         100% {
             transform: rotate(0deg) translateY(-50px) translateX(-100px);

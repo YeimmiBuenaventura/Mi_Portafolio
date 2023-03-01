@@ -19,8 +19,10 @@ export const Navbar = () => {
     return (
         <section>
             <section className="mee">
-                <button className="about" onClick={handleAbout}> About Me
+                <div className="about">
+                    <button className="" onClick={handleAbout}> About Me
                 </button>
+                </div>
                 {open ? (<div className="card animate">
                     <p className="text1">Soy Ingeniera Ambiental y Desarrolladora Web Fullstack con
                         MERN y cuento con conocimientos básicos JAVA.
@@ -48,8 +50,10 @@ export const Navbar = () => {
                     </div>
                 </div>
                 ) : null}
-                <button className="project" onClick={handleProject}>Projects
+                <div className="project">
+                    <button className="" onClick={handleProject}>Projects
                 </button>
+                </div>
                 {mine ? <MyProjects /> : null}
 
             </section>

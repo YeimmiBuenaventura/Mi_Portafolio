@@ -1,6 +1,6 @@
 export const mine = [
     {
-        id : 1,
+        id : 6,
         title : 'App de Domicilios',
         tec : 'CSS - JSX - REACT',
         github : 'https://github.com/YeimmiBuenaventura/TasquitaBar.git',
@@ -9,7 +9,25 @@ export const mine = [
         type : "myprojects"
     },
     {
-        id : 2,
+        id : 5,
+        title : 'Movie - CRUD',
+        tec : 'HTLM, CSS, JS, REACT, MONGODB',
+        github : 'https://github.com/JhonattanSSG01/CRUD_clubMovies.git',
+        link : 'https://crud-club-movies.vercel.app/',
+        img: 'movie.png',
+        type : "myprojects"
+    },
+    {
+        id : 4,
+        title : 'Todo-List',
+        tec : 'HTLM, CSS, JS, REACT, MONGODB',
+        github : 'https://github.com/YeimmiBuenaventura/TodoList-Mongo.git',
+        link : 'https://todo-list-mongo.vercel.app/',
+        img: 'flores.png',
+        type : "myprojects"
+    },
+    {
+        id : 3,
         title : 'First Wheel of Doom',
         tec : 'HTML - CSS - REACT',
         github : 'https://github.com/YeimmiBuenaventura/WheelOfDoom.git',
@@ -18,7 +36,7 @@ export const mine = [
         type : "myprojects"
     },
     {
-        id : 3,
+        id : 2,
         title : 'Clon - Maquetación',
         tec : 'HTML - CSS',
         github : 'https://github.com/mariasuescumg/deezer_landingpage.git',
@@ -27,7 +45,7 @@ export const mine = [
         type : "myprojects"
     },
     {
-        id : 4,
+        id : 1,
         title : 'Página Tributo',
         tec : 'HTML - CSS',
         github : 'https://github.com/YeimmiBuenaventura/TributoNat.git',
